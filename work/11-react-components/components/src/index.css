@@ -1,0 +1,46 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+:root{
+  --color-page-bg:papayawhip;
+  --color-page-text:black;
+  --color-header-bg:burlywood;
+  --color-header-text:black;
+}
+
+body{
+  margin: 0;
+
+  background-color: var(--color-page-bg);
+  color: var(--color-page-text);
+
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+input, select, textarea {
+  font: inherit;
+}
+
+.button-normal {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-link {
+  background: none;
+  color: #007bff;
+  padding: 8px 16px;
+  border: none;
+  text-decoration: underline;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}

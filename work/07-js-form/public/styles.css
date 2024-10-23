@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+.header {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+    width: 100%; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+.content { 
+    width: 100%;
+    max-width: 1000px;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+p{
+    color: red;
+}
+
+input[type="text"],
+.register__email, 
+.register__confirm, 
+select {
+    width: 100%; 
+    padding: 0.5rem;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.register__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; 
+}
+
+.register__label-checkbox {
+    display: flex;
+    align-items: center; 
+    cursor: pointer; 
+}
+
+.register__checkbox {
+    margin-right: 10px; 
+}
+
+input[type="checkbox"] {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.register__submit { 
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+.register__submit:hover {
+    background-color: #003d82;
+}
+
+.register__label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.register__error{
+    background-color: #ff000066;
+    padding: 8px;
+}
+
+.register__error:empty{
+    display: none ;
+}
+
+.form-explanation p { 
+    font-size: 0.85em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.required{
+    color: red;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a:hover{
+    color:purple
+}
+
+@media (min-width: 40rem) {
+    .register__label {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        gap: 20px;
+        align-items: center; 
+    }
+
+    .register__label-checkbox {
+        grid-column: 1 / -1; 
+        justify-content: start; 
+    }
+
+    .register__error-name,
+    .register__error-email,
+    .register__error-confirm {
+        grid-column: 2 /span 1;
+    }
+
+    .register__submit {
+        grid-column: 1 / -1; 
+    }
+}

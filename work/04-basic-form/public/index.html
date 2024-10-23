@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Register With Us</h1>
+        </header>
+        <main>
+            <form id="registration-form" action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Name <span class="required-indicator">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required-indicator">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="tier">Tier <span class="required-indicator">*</span></label>
+                    <select id="tier" name="tier" required>
+                        <option value="" disabled selected>Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </div>
+                <div class="form-checkbox">
+                    <label for="annoy-me">Do you want us to send you annoying emails?</label>
+                    <input type="checkbox" id="annoy-me" name="annoy-me" checked>
+                </div>
+                <div class="form-explanation">
+                    <p>Fields marked with an <span class="required-indicator">*</span> are required.</p>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+        <footer>
+            <p><a href="#" title="Privacy Policy">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <header class="header">
+            <h1>Register With Us</h1>
+        </header>
+        <main>
+            <form class="register" action="/register" method="POST">
+                <!-- Name field -->
+                <label class="register__label">
+                    <span class="register__label-text">Name <span class="required">*</span></span>
+                    <input name="name" class="register__name" type="text">
+                    <span class="register__error register__error-name"></span>
+                </label>
+                <!-- Email field -->
+                <label class="register__label">
+                    <span class="register__label-text">Email <span class="required">*</span></span>
+                    <input name="email" class="register__email" type="text">
+                    <span class="register__error register__error-email"></span>
+                </label>
+                <!-- Confirm Email field -->
+                <label class="register__label">
+                    <span class="register__label-text">Confirm Email</span>
+                    <input name="confirm" class="register__confirm" type="text">
+                    <span class="register__error register__error-confirm"></span>
+                </label>
+                <!-- "Wants spam" checkbox -->
+                <label class="register__label-checkbox">
+                    <input type="checkbox" name="wants-spam" class="register__checkbox">
+                    Yes, send me email updates
+                </label>
+                <!-- Membership tier select menu -->
+                <label class="register__label">
+                    Membership Tier
+                    <select name="tier" class="register__tier">
+                        <option value="" disabled selected>Please select</option>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </label>
+                <p>*represents required field.</p>
+                <button type="submit" class="register__submit">Register</button>
+            </form>
+        </main>
+        <footer>
+            <p><a href="#" title="Privacy Policy">Privacy Policy</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

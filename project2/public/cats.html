@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Internet Cats</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="gray tabby cat" id="logo" class="card-image">
+            </a>
+            <div class="header-content">
+                <a href="#main-content" class="skiplink">Skip to Content</a>
+                <h1>Famous Internet Cats</h1>
+                <button class="hamburger">&#9776;</button>
+            </div>
+            <nav>
+                <ul class="navigation-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cats.html">Famous Cats</a></li>
+                    <li><a href="#">Cat Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="main-content">
+            <section class="cats">
+                <article class="cat">
+                    <h2>Jorts</h2>
+                    <img src="images/jorts.jpg" alt="white and brown long fur cat" class="card-image">
+                    <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque<br>
+                        Ipsum lorem sit <button class="subscribe-button">Subscribe</button> voluptate inventore.</p>
+                </article>
+                <article class="cat">
+                    <h2>Jean</h2>
+                    <img src="images/jean.jpg" alt="orange and white cat on yellow surface" class="card-image">
+                    <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+                    <button class="subscribe-button">Subscribe</button>
+                </article>
+                <article class="cat">
+                    <h2>Maru</h2>
+                    <img src="images/maru.jpg" alt="brown and white tabby cat" class="card-image">
+                    <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+                    <button class="subscribe-button">Subscribe</button>
+                </article>
+                <article class="cat">
+                    <h2>Nyancat</h2>
+                    <img src="images/nyancat.jpg" alt="three assorted color kittens" class="card-image">
+                    <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+                    <button class="subscribe-button">Subscribe</button>
+                </article>
+                <article class="cat">
+                    <h2>Grumpy Cat</h2>
+                    <img src="images/grumpy.jpg" alt="white and black cat" class="card-image">
+                    <p>Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque</p>
+                    <button class="subscribe-button">Subscribe</button>
+                </article>
+                <article class="cat">
+                    <h2>Lil Bub</h2>
+                    <img src="images/lil.jpg" alt="orange and white tabby cat" class="card-image">
+                    <p>
+                        Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque 
+                        Dive into the mysterious world of cats, experience their elegance and independence, 
+                        and get close to these fascinating creatures with us.
+                    </p>
+                    <button class="subscribe-button">Subscribe</button>
+                </article>
+            </section>
+        </main>
+
+        <div id="subscription-modal" class="modal" aria-hidden="true">
+            <div class="modal-dialog" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+                <div class="modal-content">
+                    <h2 id="modal-title">Subscribe to the Latest News!</h2>
+                    <form id="subscription-form" action="/subscribe" method="post" novalidate>
+                        <div class="form-group">
+                            <label for="email">Email: <span class="required">*required</span></label>
+                            <input type="text" id="email" name="email" aria-required="true">
+                            <span id="email-error" class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-email">Confirm Email: <span class="required">*required</span></label>
+                            <input type="text" id="confirm-email" name="confirm-email" aria-required="true">
+                            <span id="confirm-error" class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="final-subscribe-button">Subscribe</button>
+                            <button type="button" class="final-cancel-button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-overlay"></div>
+        </div>
+        
+        <footer>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Work for Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Social Media</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

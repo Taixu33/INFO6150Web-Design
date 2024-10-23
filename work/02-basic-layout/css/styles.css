@@ -1,0 +1,103 @@
+/* Main layout styles */
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    padding: 0; 
+    display: flex; /* Establishes a flex container */
+    flex-direction: row; 
+    flex-wrap: nowrap; /* Prevents wrapping of flex items */
+}
+
+/* Header styles */
+header {
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+    background-color: plum; 
+}
+
+.primary-nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; 
+    margin: 0; 
+    display: flex; /* Enables flex layout for list items */
+    justify-content: space-around; /* Distributes items evenly with space around them */
+}
+
+header a {
+    color: blue; 
+    text-decoration: underline; 
+    padding: 5px 10px; 
+}
+
+header a:hover {
+    background-color: rebeccapurple; 
+    color: aliceblue; 
+}
+
+/* Styles for the navigation menu on the left side of the page */
+.local-menu {
+    float: left; 
+    width: 20%; 
+    background-color: pink; 
+    padding: 10px; 
+    height: 75%; 
+    border-right: 1px solid black; /* Adds a black right border */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.local-menu ul {
+    list-style-type: none; /* Removes bullet points from list */
+    padding-left: 20px; 
+    padding-bottom: 20px; 
+}
+
+.local-menu li {
+    margin-bottom: 20px; 
+    padding: 5px; 
+}
+
+.local-menu a:hover {
+    background-color: plum; 
+}
+
+/* Styles for the main content area on the right side of the page */
+main {
+    overflow: hidden; /* Hides overflowed content */
+    overflow-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+    width: 80%; 
+    background-color: pink; 
+    padding: 10px; 
+    height: 75%; 
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Footer styles */
+footer {
+    background-color: plum; 
+    padding: 20px; 
+    padding-left: 30px; 
+    text-align:left; 
+    width: 100%; 
+}
+
+footer a {
+    color: blue; 
+    text-decoration: underline; 
+}
+
+footer a:hover {
+    background-color: rebeccapurple; 
+    color: aliceblue; 
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header, .local-menu, main, footer {
+        flex-direction: column; /* Stacks items vertically on small screens */
+    }
+
+    .local-menu {
+        border-right: none; /* Removes the right border on small screens */
+    }
+}

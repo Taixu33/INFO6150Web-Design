@@ -1,0 +1,52 @@
+section, Button {
+    margin-left: 20px;
+}
+
+Button{
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-link {
+    background: none;
+    color: #007bff;
+    text-decoration: underline;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;  
+}
+
+input[type="email"] {
+    margin-bottom: 15px; 
+    display: block;      
+    width: 100%;        
+}
+
+.form-actions {
+    display: flex;       
+    justify-content: space-between; 
+    padding: 10px;     
+}
+
+.form-actions .button {
+    margin: 5px;         
+    min-width: 100px;   
+}
+
+.form-actions .final-cancel-button {
+    margin-left: 20px;   
+}

@@ -1,0 +1,139 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: darkseagreen;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+
+.header-content img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Default set to vertical arrangement */
+    justify-content: center; /* Adjust alignment if necessary */
+    align-items: center; /* Center align links in a vertical arrangement */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+/* Main Content Area Styles */
+main {
+    padding: 1rem;
+    background-color: beige;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure even content distribution, with the button at the bottom */
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 1rem;
+    grid-column: span 12; /* Maintain Grid layout */
+    place-items: center;
+}
+
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+.read-more {
+    align-self: center; /* If you want the button to be horizontally centered within the card */
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: blueviolet;
+}
+
+/* Footer Styles */
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem; /* Adjust gap as needed */
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    grid-column: span 12; /* On smaller screens, make each link span all columns */
+}
+
+footer a:hover {
+    color: blueviolet;
+}
+
+/* Media Queries - Responsive Breakpoints */
+@media (min-width: 50rem) {
+    .card {
+        grid-column: span 4; /* On wide screens, each card spans 4 columns to achieve a layout of three cards in a row */
+    }
+
+    .read-more {
+        margin-top: auto;
+    }
+
+    nav {
+        flex-direction: row; /* On wide screens, switch to horizontal arrangement */
+        justify-content: space-around; /* Maintain some spacing between links */
+        align-items: center; /* Vertically center-align links */
+    }
+
+    nav a {
+        margin-bottom: 0.5rem;
+    }
+
+    footer a {
+        grid-column: span 4; /* On wide screens, if there are 4 links, each link spans 3 columns */
+        /* Adjust based on the number of links to maintain a balanced layout */
+    }
+}
